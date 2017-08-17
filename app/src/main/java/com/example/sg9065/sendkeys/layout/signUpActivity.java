@@ -27,6 +27,16 @@ public class signUpActivity extends AppCompatActivity {
                 Intent i = new Intent(signUpActivity.this, signUpForm.class);
                 startActivity(i);
             }
+
+        });
+
+         button = (Button) findViewById(R.id.returnToLogin);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(signUpActivity.this, MainActivity.class);
+                startActivity(i);
+            }
         });
     }
     }
